@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Start — SON</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="chatList">
+    <h2>SOLACE DIALOG CORE</h2>
+    <ul id="chats"></ul>
+    <button onclick="newChat()">+ Новый диалог</button>
+  </div>
+  <div id="mainInterface">
+    <div id="background">
+      <img src="eye.png" alt="SOLACE Eye" id="eye">
+    </div>
+    <div id="app">
+      <div id="log"></div>
+      <input type="text" id="input" placeholder="Скажи или напиши что-нибудь..." autofocus />
+      <input type="file" id="fileInput" />
+      <button onclick="speak()">🎙️ Сказать</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
